@@ -1,0 +1,11 @@
+ticker,company_name,quality_score,num_sources
+AAPL,Apple Inc.,100.0,3
+MSFT,Microsoft Corporation,100.0,3
+GOOGL,Alphabet Inc.,100.0,3
+AMZN,"Amazon.com, Inc.",100.0,3
+TSLA,"Tesla, Inc.",94.12,3
+JPM,JPMorgan Chase & Co.,100.0,3
+JNJ,Johnson & Johnson,100.0,3
+WMT,Walmart Inc.,100.0,3
+DIS,The Walt Disney Company,100.0,3
+XOM,Exxon Mobil Corporation,100.0,3
