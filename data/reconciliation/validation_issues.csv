@@ -1,0 +1,5 @@
+rule,severity,field,description,affected_records,example_ids,examples,duplicate_groups,dataset,validation_timestamp
+completeness,medium,ticker,1 records (5.0%) missing ticker,1,[0],,,ANALYST_REPORTS,2025-10-23 03:13:56.698809
+accuracy,medium,revenue,"1 values outside valid range [0, 1000000000000]",[14],,"[{'ticker': 'DIS', 'revenue': 9999999999999.0}]",,ANALYST_REPORTS,2025-10-23 03:13:56.698809
+uniqueness,high,,16 duplicate records based on ['ticker'],"[2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 15, 16, 17, 18, 19]",,"[{'ticker': 'AMZN', 'count': 3}, {'ticker': 'GOOGL', 'count': 2}, {'ticker': 'JNJ', 'count': 2}, {'ticker': 'MSFT', 'count': 2}, {'ticker': 'TSLA', 'count': 2}]",7.0,ANALYST_REPORTS,2025-10-23 03:13:56.698809
+format,medium,report_date,12 dates in non-standard format,"[1, 3, 4, 5, 6, 7, 9, 13, 14, 15, 18, 19]",,"['2025-10-09', '2025-10-18', '2025-10-11', '2025-09-08', '2025-10-10']",,ANALYST_REPORTS,2025-10-23 03:13:56.698809
