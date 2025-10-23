@@ -304,24 +304,6 @@ python src/reconciliation.py
 python src/anomaly_detection.py
 ```
 
----
-
-## 📝 Interview Talking Points
-
-### "Tell me about a data quality project you've worked on."
-
-*"I built an automated pipeline that reconciles financial data from three independent sources—SEC filings, market data APIs, and analyst reports. The key challenge was entity resolution: the same company appears with different names across sources, like 'Alphabet Inc.' vs 'Google Inc.' I implemented fuzzy matching with an 85% threshold and achieved a 100% automated match rate for companies with ticker symbols. For revenue discrepancies, I developed logic to average values when differences are small (<5%) and flag larger discrepancies for investigation. The pipeline reduced manual reconciliation time by 89%."*
-
-### "How do you handle missing data?"
-
-*"I use field-specific strategies based on criticality. For essential fields like ticker or company name, I drop records—we can't analyze data without identifiers. For financial metrics like revenue, I flag missing values but keep the record, since partial data is still useful. Every decision is documented in the audit trail."*
-
-### "How do you ensure data quality in production?"
-
-*"I built a multi-layered approach: First, validation rules run on ingestion—20+ checks for completeness, accuracy, consistency. Second, automated anomaly detection catches outliers using Z-scores and IQR methods. Third, a monitoring dashboard shows real-time quality metrics. Fourth, an alert system notifies of critical issues. Finally, every transformation is logged for audit trail."*
-
----
-
 ## 🔮 Future Enhancements
 
 ### Short-term
